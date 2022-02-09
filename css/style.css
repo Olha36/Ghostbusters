@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    width: 100%;
+}
+
 .container {
     width: 100%;
 }
@@ -78,7 +82,7 @@ input::placeholder {
 
 /*description*/
 .description {
-    margin: 186px 353px 80px 202px;
+    margin: 186px 353px -60px 202px;
     display: flex;
 }
 
@@ -99,7 +103,7 @@ input::placeholder {
     margin-bottom: 16px;
 }
 
-h4 {
+.flex h4 {
     font-size: 18px;
     line-height: 21px;
     color: #A5A5A5;
@@ -178,9 +182,70 @@ h4 {
 }
 
 .play-rectangle {
+    position: absolute;
     width: 358px;
     height: 75px;
     border: 1px solid #D4D4D4;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    margin-left: 153px;
+}
+
+#hr {
+    margin-top: 153px;
+    margin-bottom: 70px;
+}
+
+/*actor*/
+.wrapper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+h3 {
+    margin-right: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.wrapper h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+}
+
+.actor {
+    width: 85%;
+    margin-left: 153px;
+}
+
+.roles {
+    display: grid;
+    grid-template-columns: repeat(4, 26%);
+    margin-bottom: 100px;
+}
+
+.actors {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.actors img {
+    margin-right: 20px;
+}
+
+.wrapper-actors {
+    display: grid;
+}
+
+h5 {
+    margin-bottom: 6px;
+}
+
+/*news*/
+
+.news {
+    background-color: #F3F3F3;
 }

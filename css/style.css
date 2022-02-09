@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.v-l {
+    border-left: 1px solid #D4D4D4;
+    margin-right: 34px;
+}
+
+.header h2 {
+    margin: 35px 34px;
+    font-size: 30px;
+    line-height: 35px;
+    color: #5671F6;
+    font-weight: bold;
+}
+
+.search {
+    margin-top: 41px;
+}
+
+.search img {
+    margin-right: 22px;
+}
+
+input::placeholder {
+    color: #A5A5A5;
+}
+
+#movie-search {
+    border: none;
+    margin-right: 377px;
+}
+
+.menu {
+    margin-top: 41px;
+    margin-right: 44px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #363636;
+    margin-right: 18px;
+}
+
+.registration {
+    margin-top: 41px;
+}
+
+.registration a {
+    margin-right: 34px;
+    color: #5671F6;
+}
+
+.log-in {
+    width: 151px;
+    height: 105px;
+    background: #5671F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*description*/
+.description {
+    margin: 186px 353px 80px 202px;
+    display: flex;
+}
+
+.description img {
+    position: absolute;
+    margin-left: 22px;
+}
+
+.flex {
+    margin-left: 397px;
+}
+
+.hunters {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 900;
+    color: #363636;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+    margin-bottom: 32px;
+}
+
+.plot {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 50px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 260px 210px;
+    margin-bottom: 27px;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 100px 160px;
+    margin-bottom: 16px;
+}
+
+.text h2 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.rating {
+    display: flex;
+}
+
+.rectangle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #5671F6;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.rectangle p {
+    color: #5671F6;
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 34px;
+}
+
+.rate {
+    margin-bottom: 10px;
+}
+
+.rate h1 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.rate p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 7px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.play-rectangle {
+    width: 358px;
+    height: 75px;
+    border: 1px solid #D4D4D4;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

@@ -181,7 +181,7 @@ input::placeholder {
     font-weight: bold;
 }
 
-.play-rectangle {
+.play {
     position: absolute;
     width: 358px;
     height: 75px;
@@ -189,6 +189,21 @@ input::placeholder {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-left: 153px;
+    margin-top: 45px;
+}
+
+.play-rectangle {
+    display: flex;
+    align-items: center;
+    margin: 25px 81px;
+}
+
+.play-rectangle a {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 14px;
+    color: #5671F6;
+    text-decoration: none;
 }
 
 #hr {
@@ -248,4 +263,35 @@ h5 {
 
 .news {
     background-color: #F3F3F3;
+}
+
+.news h1 {
+    padding: 70px 0 65px 153px;
+    color: #000000;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+.news-block {
+    display: flex;
+    margin-left: 153px;
+}
+
+.frame {
+    margin-bottom: 100px;
+}
+
+.frame-text {
+    margin: 30px 30px 52px;
+}
+.frame-text h6 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 14px;
+}
+
+.frame-text p {
+    font-size: 14px;
+    line-height: 16px;
 }

@@ -57,6 +57,10 @@ input::placeholder {
     margin-right: 18px;
 }
 
+.flex-direction {
+    display: flex;
+}
+
 .registration {
     margin-top: 41px;
 }
@@ -364,6 +368,7 @@ h5 {
         display: flex;
         flex-direction: column;
         width: 375px;
+        height: 603px;
         padding-top: 130px;
         align-items: center;
         margin: auto;
@@ -375,5 +380,25 @@ h5 {
     .header .menu a:last-child {
         margin-bottom: 66px;
     }
-    
+    .v-l{
+        border-left: 1px solid #D4D4D4;
+        margin-right: 34px;
+    }
+    .header .flex-direction {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        flex-direction: column;
+        margin-top: 407px;
+    }
+    .flex-direction .registration a {
+        color: white;
+    }
+    .flex-direction .log-in  {
+        background: none;
+        margin-right: 86px;
+    }
+    .log-in a {
+        margin-right: 63px;
+    }
 }

@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: -16px;
 }
 
 body {
@@ -64,6 +64,7 @@ input::placeholder {
 .registration a {
     margin-right: 34px;
     color: #5671F6;
+    text-decoration: none;
 }
 
 .log-in {
@@ -297,4 +298,82 @@ h5 {
 .frame-text p {
     font-size: 14px;
     line-height: 16px;
+}
+
+
+/*media*/
+
+@media (max-width: 1395px) {
+    .v-l {
+        display: none;
+    }
+    .registration {
+        background: none;
+    }
+    
+    .search {
+        position: absolute;
+    }
+    .menu-button {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color:#363636;
+        top: 32px;
+        right: 28px;
+        border: none;
+    }
+    .menu-button::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color:#363636;
+        right: 28px;
+        margin-top: 4px;
+    }
+    .menu-button::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color:#363636;
+        right: 28px;
+        margin-top: 2px;
+    }
+    .menu-button:active {
+        height: 0;
+    }
+    .menu-button-active::before {
+        transform: rotate(45deg);
+        margin-top: 0;
+    }
+    .menu-button-active::after {
+        transform: rotate(-45deg);
+        margin-top: 0;
+    }
+    .header #movie-search {
+        display: none;
+    }
+    .header .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #5671F6;
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        padding-top: 130px;
+        align-items: center;
+        margin: auto;
+    }
+    .header .menu a {
+        color: white;
+        margin-bottom: 18px;
+    }
+    .header .menu a:last-child {
+        margin-bottom: 66px;
+    }
+    
 }

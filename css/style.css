@@ -12,16 +12,17 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    height: 104px;
+    border-bottom: 1px solid #D4D4D4;
 }
 
-.v-l {
+/* .v-l {
     border-left: 1px solid #D4D4D4;
-    margin-right: 34px;
-}
+    margin-right: 34px; 
+    border-bottom: 80px solid #D4D4D4;
+} */
 
-.header h2 {
+/* .header h2 {
     margin: 35px 34px;
     font-size: 30px;
     line-height: 35px;
@@ -83,7 +84,7 @@ input::placeholder {
 .log-in a {
     color: #FFFFFF;
     text-decoration: none;
-}
+} */
 
 /*description*/
 .description {
@@ -307,7 +308,7 @@ h5 {
 
 /*media*/
 
-@media (max-width: 1395px) {
+/* @media (min-width: 500px) {
     .v-l {
         display: none;
     }
@@ -401,4 +402,79 @@ h5 {
     .log-in a {
         margin-right: 63px;
     }
+} */
+
+/* sub_menu */
+.nav, .nav_header, .sub_menu {
+    height: 100%;
 }
+.logo {
+    padding: 35px 34px;
+    font-size: 30px;
+    line-height: 35px;
+    color: #5671F6;
+    font-weight: bold;
+    margin-right: 34px; 
+    border-right: 1px solid #D4D4D4;
+}
+.logo h2 {
+    padding-right: 34px;
+}
+.search {
+    margin-right: auto;
+}
+.search img {
+    margin-right: 22px;
+}
+.sub_menu {
+    display: flex;
+    align-items: center;
+}
+.sub_menu_list1, .sub_menu_list2 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.sub_menu_list1 a, .sub_menu_list2 a {
+    text-decoration: none;
+}
+.sub_menu_list1 a {
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 18px;
+    color: #363636;
+}
+.sub_menu_list2 {
+    border-left: 1px solid #D4D4D4;
+    padding-left: 34px;
+}
+.registration {
+    margin-right: 34px;
+}
+.registration a {
+    color: #5671F6;
+}
+.log-in {
+    width: 151px;
+    height: 104px;
+    background-color: #5671F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in a{
+    color: white;
+}
+
+/* @media (max-width: 1560px) {
+    .nav {
+        top: 0;
+        right: 0;
+        position: fixed;
+        background-color: #5671F6;
+    }
+    .nav__header {
+        color:white;
+    }
+
+} */

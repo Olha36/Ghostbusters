@@ -15,92 +15,77 @@ body {
     height: 104px;
     border-bottom: 1px solid #D4D4D4;
 }
-
-/* .v-l {
-    border-left: 1px solid #D4D4D4;
-    margin-right: 34px; 
-    border-bottom: 80px solid #D4D4D4;
-} */
-
-/* .header h2 {
-    margin: 35px 34px;
+.nav, .nav_header, .sub_menu {
+    height: 100%;
+}
+.logo {
+    padding: 35px 34px;
     font-size: 30px;
     line-height: 35px;
     color: #5671F6;
     font-weight: bold;
+    margin-right: 34px; 
+    border-right: 1px solid #D4D4D4;
 }
-
+.logo h2 {
+    padding-right: 34px;
+}
 .search {
-    margin-top: 41px;
+    margin-right: auto;
 }
-
 .search img {
     margin-right: 22px;
 }
-
-input::placeholder {
-    color: #A5A5A5;
-}
-
-#movie-search {
-    border: none;
-    margin-right: 377px;
-}
-
-.menu {
-    margin-top: 41px;
-    margin-right: 44px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #363636;
-    margin-right: 18px;
-}
-
-.flex-direction {
+.sub_menu {
     display: flex;
-}
-
-.registration {
-    margin-top: 41px;
-}
-
-.registration a {
-    margin-right: 34px;
-    color: #5671F6;
-    text-decoration: none;
-}
-
-.log-in {
-    width: 151px;
-    height: 105px;
-    background: #5671F6;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
-
-.log-in a {
-    color: #FFFFFF;
-    text-decoration: none;
-} */
-
-/*description*/
-.description {
-    margin: 186px 353px -60px 202px;
+.sub_menu_list1, .sub_menu_list2 {
     display: flex;
+    height: 100%;
+    align-items: center;
+}
+.sub_menu_list1 a, .sub_menu_list2 a {
+    text-decoration: none;
+}
+.sub_menu_list1 a {
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 18px;
+    color: #363636;
+}
+.sub_menu_list2 {
+    border-left: 1px solid #D4D4D4;
+    padding-left: 34px;
+}
+.registration {
+    margin-right: 34px;
+}
+.registration a {
+    color: #5671F6;
+}
+.log-in {
+    width: 151px;
+    height: 104px;
+    background-color: #5671F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.log-in a{
+    color: white;
+}
+.description {
+    display: flex;
+    margin-left: 202px;
 }
 
 .description img {
-    position: absolute;
     margin-left: 22px;
 }
-
 .flex {
-    margin-left: 397px;
+    margin-left: 13px;
 }
-
 .hunters {
     font-size: 36px;
     line-height: 42px;
@@ -188,14 +173,13 @@ input::placeholder {
 }
 
 .play {
-    position: absolute;
     width: 358px;
     height: 75px;
     border: 1px solid #D4D4D4;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin-left: 153px;
     margin-top: 45px;
+    margin-left: 222px;
 }
 
 .play-rectangle {
@@ -305,8 +289,113 @@ h5 {
     line-height: 16px;
 }
 
+/*@media*/
+@media (max-width: 1000px) {
+    .menu-button {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color:#363636;
+        top: 32px;
+        right: 28px;
+        border: none;
+    }
+    .menu-button::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color:#363636;
+        right: 0px;
+        margin-top: -8px;
+    }
+    .menu-button::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color:#363636;
+        right: 0px;
+        margin-top: 8px;
+    }
+    .menu-button:active {
+        height: 0;
+    }
+    .sub_menu_list1 {
+        display: none;
+        position: absolute;
+        width: 375px;
+        height: 80%;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #5671F6;
+        margin-top: 85px;
+        margin-right: 26px;
+    }
+    .sub_menu_list1-active {
+        display: block;
+    }
+    .sub_menu_list1 a {
+        color: white;
+        margin-bottom: 18px;
+    }
+    .sub_menu_list1 a:first-child {
+        padding-top: 131px;
+    }
+    .sub_menu_list1 a:nth-child(4) {
+        border-bottom: 1px solid #D4D4D4;
+        padding-bottom: 66px;
+    }
+    .sub_menu_list2 {
+        flex-direction: column;
+        justify-content: center;
+        border-left: none;
+    }    
+    .logo {
+        border-right: none;
+    }
+    #movie-search {
+        display: none;
+    }
+    .log-in {
+        margin-right: 30px;
+        background-color: transparent;
+    }
+    .log-in a:first-child {
+        padding-top: 0px;
+    }
+    .flex {
+        margin: 0;
+        margin-left: 28px;
+    }
+    .description {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .play {
+        margin-left: 28px;
+    }
+    .actor {
+        margin-left: 28px;
+    }
+    .roles {
+        display: block;
+    }
+    .news h1 {
+        padding: 70px 0 65px 28px;
+    }
+    .news-block {
+        margin-left: 28px;
+    }
 
-/*media*/
+}
+
 
 /* @media (min-width: 500px) {
     .v-l {
@@ -405,66 +494,7 @@ h5 {
 } */
 
 /* sub_menu */
-.nav, .nav_header, .sub_menu {
-    height: 100%;
-}
-.logo {
-    padding: 35px 34px;
-    font-size: 30px;
-    line-height: 35px;
-    color: #5671F6;
-    font-weight: bold;
-    margin-right: 34px; 
-    border-right: 1px solid #D4D4D4;
-}
-.logo h2 {
-    padding-right: 34px;
-}
-.search {
-    margin-right: auto;
-}
-.search img {
-    margin-right: 22px;
-}
-.sub_menu {
-    display: flex;
-    align-items: center;
-}
-.sub_menu_list1, .sub_menu_list2 {
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-.sub_menu_list1 a, .sub_menu_list2 a {
-    text-decoration: none;
-}
-.sub_menu_list1 a {
-    font-size: 18px;
-    line-height: 21px;
-    margin-right: 18px;
-    color: #363636;
-}
-.sub_menu_list2 {
-    border-left: 1px solid #D4D4D4;
-    padding-left: 34px;
-}
-.registration {
-    margin-right: 34px;
-}
-.registration a {
-    color: #5671F6;
-}
-.log-in {
-    width: 151px;
-    height: 104px;
-    background-color: #5671F6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.log-in a{
-    color: white;
-}
+
 
 /* @media (max-width: 1560px) {
     .nav {

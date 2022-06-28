@@ -15,17 +15,19 @@ body {
     height: 104px;
     border-bottom: 1px solid #D4D4D4;
 }
-.nav, .nav_header, .sub_menu {
+.nav, 
+.nav_header, 
+.sub_menu {
     height: 100%;
 }
 .logo {
+    margin-right: 34px; 
     padding: 35px 34px;
+    border-right: 1px solid #D4D4D4;
     font-size: 30px;
     line-height: 35px;
-    color: #5671F6;
     font-weight: bold;
-    margin-right: 34px; 
-    border-right: 1px solid #D4D4D4;
+    color: #5671F6;
 }
 .logo h2 {
     padding-right: 34px;
@@ -40,23 +42,25 @@ body {
     display: flex;
     align-items: center;
 }
-.sub_menu_list1, .sub_menu_list2 {
+.sub_menu_list1, 
+.sub_menu_list2 {
     display: flex;
-    height: 100%;
     align-items: center;
+    height: 100%;
 }
-.sub_menu_list1 a, .sub_menu_list2 a {
+.sub_menu_list1 a, 
+.sub_menu_list2 a {
     text-decoration: none;
 }
 .sub_menu_list1 a {
+    margin-right: 18px;
     font-size: 18px;
     line-height: 21px;
-    margin-right: 18px;
     color: #363636;
 }
 .sub_menu_list2 {
-    border-left: 1px solid #D4D4D4;
     padding-left: 34px;
+    border-left: 1px solid #D4D4D4;
 }
 .registration {
     margin-right: 34px;
@@ -65,21 +69,20 @@ body {
     color: #5671F6;
 }
 .log-in {
-    width: 151px;
-    height: 104px;
-    background-color: #5671F6;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 151px;
+    height: 104px;
+    background-color: #5671F6;
 }
 .log-in a{
     color: white;
 }
 .description {
     display: flex;
-    margin-left: 202px;
+    margin: 82px 0 0 202px;
 }
-
 .description img {
     margin-left: 22px;
 }
@@ -87,118 +90,98 @@ body {
     margin-left: 13px;
 }
 .hunters {
+    margin-bottom: 16px;
     font-size: 36px;
     line-height: 42px;
     font-weight: 900;
     color: #363636;
-    margin-bottom: 16px;
 }
-
 .flex h4 {
+    margin-bottom: 32px;
     font-size: 18px;
     line-height: 21px;
     color: #A5A5A5;
-    margin-bottom: 32px;
 }
-
 .plot {
+    margin-bottom: 50px;
     font-size: 14px;
     line-height: 21px;
-    margin-bottom: 50px;
 }
-
 .info {
     display: grid;
     grid-template-columns: 260px 210px;
     margin-bottom: 27px;
 }
-
 .text {
     display: grid;
     grid-template-columns: 100px 160px;
     margin-bottom: 16px;
 }
-
+.text p,
 .text h2 {
     font-size: 16px;
     line-height: 19px;
+}
+.text h2 {
     font-weight: bold;
 }
-
-.text p {
-    font-size: 16px;
-    line-height: 19px;
-}
-
 .rating {
     display: flex;
 }
-
 .rectangle {
     width: 100px;
     height: 100px;
+    margin-right: 16px;
     border: 1px solid #5671F6;
     border-radius: 10px;
-    margin-right: 16px;
 }
-
 .rectangle p {
-    color: #5671F6;
+    text-align: center;
+    margin-top: 34px;
     font-size: 28px;
     line-height: 33px;
     font-weight: bold;
-    text-align: center;
-    margin-top: 34px;
+    color: #5671F6;
 }
-
 .rate {
     margin-bottom: 10px;
 }
-
 .rate h1 {
+    margin-bottom: 12px;
     font-size: 18px;
     line-height: 21px;
     font-weight: bold;
-    margin-bottom: 12px;
 }
-
 .rate p {
+    margin-bottom: 7px;
     font-size: 16px;
     line-height: 19px;
-    margin-bottom: 7px;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .play {
     width: 358px;
-    height: 75px;
+    margin-top: 45px;
+    margin-left: 222px;
     border: 1px solid #D4D4D4;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin-top: 45px;
-    margin-left: 222px;
 }
-
 .play-rectangle {
     display: flex;
     align-items: center;
     margin: 25px 81px;
 }
-
 .play-rectangle a {
+    margin-left: 14px;
     font-size: 16px;
     line-height: 19px;
-    margin-left: 14px;
-    color: #5671F6;
     text-decoration: none;
+    color: #5671F6;
 }
-
 #hr {
-    margin-top: 153px;
-    margin-bottom: 70px;
+    margin: 153px 0 70px 0;
 }
 
 /*actor*/
@@ -206,45 +189,37 @@ body {
     display: flex;
     margin-bottom: 60px;
 }
-
 h3 {
     margin-right: 30px;
     font-size: 24px;
     line-height: 28px;
     font-weight: bold;
 }
-
 .wrapper h4 {
     font-size: 24px;
     line-height: 28px;
     color: #A5A5A5;
 }
-
 .actor {
     width: 85%;
     margin-left: 153px;
 }
-
 .roles {
     display: grid;
     grid-template-columns: repeat(4, 26%);
     margin-bottom: 100px;
 }
-
 .actors {
     display: flex;
     align-items: center;
     margin-bottom: 35px;
 }
-
 .actors img {
     margin-right: 20px;
 }
-
 .wrapper-actors {
     display: grid;
 }
-
 h5 {
     margin-bottom: 6px;
 }
@@ -257,51 +232,47 @@ h5 {
 
 .news h1 {
     padding: 70px 0 65px 153px;
-    color: #000000;
     font-size: 24px;
     line-height: 28px;
     font-weight: bold;
+    color: #000000;
 }
-
 .news-block {
     display: flex;
     margin-left: 153px;
 }
-
 .frame {
     margin-bottom: 100px;
 }
-
 .frame-text {
-    margin-right: 30px;
-    background-color: #fff;
-    padding: 30px;
     width: 48%;
+    margin-right: 30px;
+    padding: 30px;
+    background-color: #fff;
 }
 .frame-text h6 {
+    margin-bottom: 14px;
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 14px;
 }
-
 .frame-text p {
     font-size: 14px;
     line-height: 16px;
 }
 
 /*@media*/
-@media (max-width: 1000px) {
-    .menu-button {
+@media (max-width: 1100px) {
+    .burger-menu {
         display: block;
         position: absolute;
         width: 30px;
-        height: 2px;
+        height: 1px;
         background-color:#363636;
         top: 32px;
         right: 28px;
         border: none;
     }
-    .menu-button::before {
+    .burger-menu::before {
         content: '';
         display: block;
         position: absolute;
@@ -311,17 +282,17 @@ h5 {
         right: 0px;
         margin-top: -8px;
     }
-    .menu-button::after {
+    .burger-menu::after {
         content: '';
         display: block;
         position: absolute;
         width: 30px;
-        height: 2px;
+        height: 1px;
         background-color:#363636;
         right: 0px;
         margin-top: 8px;
     }
-    .menu-button:active {
+    .burger-menu:active {
         height: 0;
     }
     .sub_menu_list1 {
@@ -337,7 +308,7 @@ h5 {
         margin-top: 85px;
         margin-right: 26px;
     }
-    .sub_menu_list1-active {
+    .sub_menu_list1 ._active {
         display: block;
     }
     .sub_menu_list1 a {
@@ -396,115 +367,3 @@ h5 {
 
 }
 
-
-/* @media (min-width: 500px) {
-    .v-l {
-        display: none;
-    }
-    .registration {
-        background: none;
-    }
-    
-    .search {
-        position: absolute;
-    }
-    .menu-button {
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        background-color:#363636;
-        top: 32px;
-        right: 28px;
-        border: none;
-    }
-    .menu-button::before {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color:#363636;
-        right: 28px;
-        margin-top: 4px;
-    }
-    .menu-button::after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 2px;
-        background-color:#363636;
-        right: 28px;
-        margin-top: 2px;
-    }
-    .menu-button:active {
-        height: 0;
-    }
-    .menu-button-active::before {
-        transform: rotate(45deg);
-        margin-top: 0;
-    }
-    .menu-button-active::after {
-        transform: rotate(-45deg);
-        margin-top: 0;
-    }
-    .header #movie-search {
-        display: none;
-    }
-    .header .menu {
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #5671F6;
-        display: flex;
-        flex-direction: column;
-        width: 375px;
-        height: 603px;
-        padding-top: 130px;
-        align-items: center;
-        margin: auto;
-    }
-    .header .menu a {
-        color: white;
-        margin-bottom: 18px;
-    }
-    .header .menu a:last-child {
-        margin-bottom: 66px;
-    }
-    .v-l{
-        border-left: 1px solid #D4D4D4;
-        margin-right: 34px;
-    }
-    .header .flex-direction {
-        position: absolute;
-        top: 100px;
-        right: 0;
-        flex-direction: column;
-        margin-top: 407px;
-    }
-    .flex-direction .registration a {
-        color: white;
-    }
-    .flex-direction .log-in  {
-        background: none;
-        margin-right: 86px;
-    }
-    .log-in a {
-        margin-right: 63px;
-    }
-} */
-
-/* sub_menu */
-
-
-/* @media (max-width: 1560px) {
-    .nav {
-        top: 0;
-        right: 0;
-        position: fixed;
-        background-color: #5671F6;
-    }
-    .nav__header {
-        color:white;
-    }
-
-} */

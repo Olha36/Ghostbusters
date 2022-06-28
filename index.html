@@ -11,40 +11,45 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="nav">
-                <div class="nav_header">
-                    <div class="sub_menu">
-                        <div class="logo">
-                            <h2>Film.</h2>
-                        </div>
-                        <div class="search">
-                            <img src="/img/search-icon.png" alt="search">
-                            <input type="search1" placeholder="Поиск по фильмам..." name="search" id="movie-search">
-                        </div>
-                        <div class="sub_menu_list1">
-                            <a href="#">Фильмы</a>
-                            <a href="#">ТВ</a>
-                            <a href="#">Новости</a>
-                            <a href="#">О сервисе</a>
-                            <div class="sub_menu_list2">
-                                <div class="registration">
-                                <a href="#">Регистрация</a>
-                                </div>
-                                <div class="log-in">
-                                <a href="#">Войти</a>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="nav">
+                    <div class="nav_header">
+                        <div class="sub_menu">
+                            <div class="logo">
+                                <h2>Film.</h2>
+                            </div>
+                            <div class="search">
+                                <img src="/img/search-icon.png" alt="search">
+                                <input type="search1" placeholder="Поиск по фильмам..." name="search" id="movie-search">
+                            </div>
+                            <div class="sub_menu_list1 _active">
+                                <a href="#">Фильмы</a>
+                                <a href="#">ТВ</a>
+                                <a href="#">Новости</a>
+                                <a href="#">О сервисе</a>
+                                <div class="sub_menu_list2">
+                                    <div class="registration">
+                                    <a href="#">Регистрация</a>
+                                    </div>
+                                    <div class="log-in">
+                                    <a href="#">Войти</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-            </div>
-        </div>
-        <button class="menu-button">
-        </button>
-        <hr">
+            
+            <button class="burger-menu"></button>
+    </header>
+
+   
+   
+    <main>
         <div class="description">
             <img src="/img/img.jpg" alt="img">
             <div class="flex">
@@ -95,13 +100,16 @@
                 </div>
             </div>
         </div>
+
         <div class="play">
             <div class="play-rectangle">
                 <img src="/img/Vector.svg" alt="img">
                 <a href="#" class="button">Посмотреть трейлер</a>
             </div>
         </div>
+
         <hr id="hr">
+
         <div class="actor">
             <div class="wrapper">
                 <h3>Актеры</h3>
@@ -166,45 +174,58 @@
                 </div>
             </div>
         </div>
-        <div class="news">
-            <h1>Новости по теме</h1>
-                <div class="news-block">
-                    <div class="frame">
-                        <div class="frame-text">
-                            <h6>31 марта 2020</h6>
-                        <p>
-                            «Морбиуса» и «Охотников за привидениями» перенесли на следующий год
-                        </p>
+    </main>
+   
+        
+
+
+        <footer>
+            <div class="news">
+                <h1>Новости по теме</h1>
+                    <div class="news-block">
+                        <div class="frame">
+                            <div class="frame-text">
+                                <h6>31 марта 2020</h6>
+                            <p>
+                                «Морбиуса» и «Охотников за привидениями» перенесли на следующий год
+                            </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="frame">
-                        <div class="frame-text">
-                            <h6>9 декабря 2019</h6>
-                        <p>
-                            Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»
-                        </p>
+    
+                        <div class="frame">
+                            <div class="frame-text">
+                                <h6>9 декабря 2019</h6>
+                            <p>
+                                Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»
+                            </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="frame">
-                        <div class="frame-text">
-                            <h6>11 ноября 2019</h6>
-                        <p>
-                            Новые «Охотники за привидениями» обзавелись названием
-                        </p>
+    
+                        <div class="frame">
+                            <div class="frame-text">
+                                <h6>11 ноября 2019</h6>
+                            <p>
+                                Новые «Охотники за привидениями» обзавелись названием
+                            </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="frame">
-                        <div class="frame-text">
-                            <h6>19 октября 2019</h6>
-                        <p>
-                            Завершились съёмки новых «Охотников за привидениями»
-                        </p>
+    
+                        <div class="frame">
+                            <div class="frame-text">
+                                <h6>19 октября 2019</h6>
+                            <p>
+                                Завершились съёмки новых «Охотников за привидениями»
+                            </p>
+                            </div>
                         </div>
+    
                     </div>
+    
                 </div>
+    
             </div>
-        </div>
-    </div>
+        </footer>
+       
 
     <script src="/main.js"></script>
 </body>

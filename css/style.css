@@ -2,23 +2,38 @@
     padding: 0;
     margin: -16px;
 }
-
-body {
-    width: 100%;
+a {
+    text-decoration: none;
 }
-
-.container {
-    width: 100%;
-}
-
-.header {
+header {
     height: 104px;
     border-bottom: 1px solid #D4D4D4;
 }
-.nav, 
-.nav_header, 
-.sub_menu {
-    height: 100%;
+.title1 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.w100 {
+    width: 100%;
+}
+.bold {
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.space-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
 }
 .logo {
     margin-right: 34px; 
@@ -26,7 +41,6 @@ body {
     border-right: 1px solid #D4D4D4;
     font-size: 30px;
     line-height: 35px;
-    font-weight: bold;
     color: #5671F6;
 }
 .logo h2 {
@@ -38,19 +52,8 @@ body {
 .search img {
     margin-right: 22px;
 }
-.sub_menu {
-    display: flex;
-    align-items: center;
-}
-.sub_menu_list1, 
-.sub_menu_list2 {
-    display: flex;
-    align-items: center;
+.h100 {
     height: 100%;
-}
-.sub_menu_list1 a, 
-.sub_menu_list2 a {
-    text-decoration: none;
 }
 .sub_menu_list1 a {
     margin-right: 18px;
@@ -69,14 +72,11 @@ body {
     color: #5671F6;
 }
 .log-in {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 151px;
     height: 104px;
     background-color: #5671F6;
 }
-.log-in a{
+.log-in a {
     color: white;
 }
 .description {
@@ -86,46 +86,46 @@ body {
 .description img {
     margin-left: 22px;
 }
-.flex {
+.description-body {
     margin-left: 13px;
 }
-.hunters {
+.description .hunters {
     margin-bottom: 16px;
     font-size: 36px;
     line-height: 42px;
     font-weight: 900;
     color: #363636;
 }
-.flex h4 {
+.description h4 {
     margin-bottom: 32px;
     font-size: 18px;
     line-height: 21px;
     color: #A5A5A5;
 }
-.plot {
+.description .plot {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 21px;
 }
-.info {
+.description .info {
     display: grid;
     grid-template-columns: 260px 210px;
     margin-bottom: 27px;
 }
-.text {
+.description .text {
     display: grid;
     grid-template-columns: 100px 160px;
     margin-bottom: 16px;
 }
-.text p,
+.description .text p,
 .text h2 {
     font-size: 16px;
     line-height: 19px;
 }
-.text h2 {
+.description .text h2 {
     font-weight: bold;
 }
-.rating {
+.description .rating {
     display: flex;
 }
 .rectangle {
@@ -140,25 +140,12 @@ body {
     margin-top: 34px;
     font-size: 28px;
     line-height: 33px;
-    font-weight: bold;
     color: #5671F6;
 }
-.rate {
-    margin-bottom: 10px;
-}
-.rate h1 {
-    margin-bottom: 12px;
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: bold;
-}
-.rate p {
+.description .rate p {
     margin-bottom: 7px;
     font-size: 16px;
     line-height: 19px;
-}
-.bold {
-    font-weight: bold;
 }
 .play {
     width: 358px;
@@ -185,17 +172,15 @@ body {
 }
 
 /*actor*/
-.wrapper {
-    display: flex;
+.actor-wrapper {
     margin-bottom: 60px;
 }
-h3 {
+.actor-wrapper h3 {
     margin-right: 30px;
     font-size: 24px;
     line-height: 28px;
-    font-weight: bold;
 }
-.wrapper h4 {
+.actor-wrapper h4 {
     font-size: 24px;
     line-height: 28px;
     color: #A5A5A5;
@@ -205,14 +190,15 @@ h3 {
     margin-left: 153px;
 }
 .roles {
-    display: grid;
-    grid-template-columns: repeat(4, 26%);
+    /* display: grid;
+    grid-template-columns: repeat(4, 26%); */
     margin-bottom: 100px;
 }
 .actors {
-    display: flex;
-    align-items: center;
     margin-bottom: 35px;
+    margin-right: 75px;
+    min-width: 204px;
+    width: auto;
 }
 .actors img {
     margin-right: 20px;
@@ -259,86 +245,28 @@ h5 {
     font-size: 14px;
     line-height: 16px;
 }
+.burger-menu {
+    display: none;
+}
 
 /*@media*/
 @media (max-width: 1100px) {
-    .burger-menu {
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 1px;
-        background-color:#363636;
-        top: 32px;
-        right: 28px;
-        border: none;
-    }
-    .burger-menu::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 1px;
-        background-color:#363636;
-        right: 0px;
-        margin-top: -8px;
-    }
-    .burger-menu::after {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 30px;
-        height: 1px;
-        background-color:#363636;
-        right: 0px;
-        margin-top: 8px;
-    }
-    .burger-menu:active {
-        height: 0;
+    .header {
+        border-bottom: 1px solid #D4D4D4;
+        margin-bottom: 30px;
     }
     .sub_menu_list1 {
         display: none;
-        position: absolute;
-        width: 375px;
-        height: 80%;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-color: #5671F6;
-        margin-top: 85px;
-        margin-right: 26px;
     }
-    .sub_menu_list1 ._active {
-        display: block;
+    input[type="search1"] {
+        display: none;
     }
-    .sub_menu_list1 a {
-        color: white;
-        margin-bottom: 18px;
-    }
-    .sub_menu_list1 a:first-child {
-        padding-top: 131px;
-    }
-    .sub_menu_list1 a:nth-child(4) {
-        border-bottom: 1px solid #D4D4D4;
-        padding-bottom: 66px;
-    }
-    .sub_menu_list2 {
-        flex-direction: column;
-        justify-content: center;
-        border-left: none;
-    }    
     .logo {
         border-right: none;
     }
-    #movie-search {
-        display: none;
-    }
-    .log-in {
-        margin-right: 30px;
-        background-color: transparent;
-    }
-    .log-in a:first-child {
-        padding-top: 0px;
+    .description img {
+        width: 90%;
+        margin: 0 auto;
     }
     .flex {
         margin: 0;
@@ -363,6 +291,44 @@ h5 {
     }
     .news-block {
         margin-left: 28px;
+    }
+
+    @media (max-width: 1090px) {
+        .menu-btn {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            background-color:#363636;
+            top: 32px;
+            right: 28px;
+            border: none;
+        }
+        .menu-btn::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            background-color:#363636;
+            right: 0px;
+            margin-top: -8px;
+        }
+        .menu-btn::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            background-color:#363636;
+            right: 0px;
+            margin-top: 8px;
+        }
+        .menu-btn:active {
+            height: 0;
+        }
+        
+        
     }
 
 }

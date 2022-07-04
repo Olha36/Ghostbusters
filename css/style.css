@@ -1,6 +1,6 @@
 * {
     padding: 0;
-    margin: -16px;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -8,6 +8,9 @@ a {
 header {
     height: 104px;
     border-bottom: 1px solid #D4D4D4;
+}
+main, .news-block {
+    margin: 0 153px;
 }
 .title1 {
     margin-bottom: 12px;
@@ -55,33 +58,33 @@ header {
 .h100 {
     height: 100%;
 }
-.sub_menu_list1 a {
+header .menu a {
     margin-right: 18px;
     font-size: 18px;
     line-height: 21px;
     color: #363636;
 }
-.sub_menu_list2 {
+.menu > div {
     padding-left: 34px;
     border-left: 1px solid #D4D4D4;
 }
-.registration {
-    margin-right: 34px;
+.menu .registration {
+    /* margin-right: 34px; */
 }
-.registration a {
+.menu .registration a {
     color: #5671F6;
+    align-items: center;
 }
-.log-in {
+.menu .log-in {
     width: 151px;
-    height: 104px;
     background-color: #5671F6;
 }
-.log-in a {
+.menu .log-in a {
     color: white;
+    align-items: center;
 }
 .description {
-    display: flex;
-    margin: 82px 0 0 202px;
+    margin-top: 82px;
 }
 .description img {
     margin-left: 22px;
@@ -124,9 +127,6 @@ header {
 }
 .description .text h2 {
     font-weight: bold;
-}
-.description .rating {
-    display: flex;
 }
 .rectangle {
     width: 100px;
@@ -186,7 +186,6 @@ header {
     color: #A5A5A5;
 }
 .actor {
-    width: 85%;
     margin-left: 153px;
 }
 .roles {
@@ -196,8 +195,7 @@ header {
 }
 .actors {
     margin-bottom: 35px;
-    margin-right: 75px;
-    min-width: 204px;
+    min-width: 291px;
     width: auto;
 }
 .actors img {
@@ -210,31 +208,29 @@ h5 {
     margin-bottom: 6px;
 }
 
-/*news*/
+/*footer*/
 
-.news {
+footer {
     background-color: #F3F3F3;
+    padding-left: 153px;
 }
-
-.news h1 {
+.title2 {
     padding: 70px 0 65px 153px;
     font-size: 24px;
     line-height: 28px;
-    font-weight: bold;
     color: #000000;
 }
-.news-block {
-    display: flex;
+/* .news-block {
     margin-left: 153px;
-}
+} */
 .frame {
-    margin-bottom: 100px;
+    width: 260px;
+    height: 160px;
 }
 .frame-text {
-    width: 48%;
-    margin-right: 30px;
     padding: 30px;
     background-color: #fff;
+    margin-bottom: 100px;
 }
 .frame-text h6 {
     margin-bottom: 14px;
@@ -244,6 +240,7 @@ h5 {
 .frame-text p {
     font-size: 14px;
     line-height: 16px;
+    font-weight: bold;
 }
 .burger-menu {
     display: none;

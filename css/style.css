@@ -58,28 +58,26 @@ main, .news-block {
 .h100 {
     height: 100%;
 }
-header .menu a {
+header .menu a, header #menu-active a {
     margin-right: 18px;
     font-size: 18px;
     line-height: 21px;
     color: #363636;
 }
-.menu > div {
+
+.menu > div, #menu-active > div {
     padding-left: 34px;
     border-left: 1px solid #D4D4D4;
 }
-.menu .registration {
-    /* margin-right: 34px; */
-}
-.menu .registration a {
+.menu .registration a, #menu-active .registration a {
     color: #5671F6;
     align-items: center;
 }
-.menu .log-in {
+.menu .log-in, #menu-active  .log-in {
     width: 151px;
     background-color: #5671F6;
 }
-.menu .log-in a {
+.menu .log-in, #menu-active .log-in a {
     color: white;
     align-items: center;
 }
@@ -189,8 +187,6 @@ header .menu a {
     margin-left: 153px;
 }
 .roles {
-    /* display: grid;
-    grid-template-columns: repeat(4, 26%); */
     margin-bottom: 100px;
 }
 .actors {
@@ -220,9 +216,6 @@ footer {
     line-height: 28px;
     color: #000000;
 }
-/* .news-block {
-    margin-left: 153px;
-} */
 .frame {
     width: 260px;
     height: 160px;
@@ -263,7 +256,7 @@ footer {
     }
     .description img {
         width: 90%;
-        margin: 0 auto;
+        margin: 30px auto  0;
     }
     .flex {
         margin: 0;
@@ -290,14 +283,14 @@ footer {
         margin-left: 28px;
     }
 
-    @media (max-width: 1090px) {
+    @media (max-width: 1005px) {
         .menu-btn {
             display: block;
             position: absolute;
             width: 30px;
             height: 1px;
             background-color:#363636;
-            top: 32px;
+            top: 50px;
             right: 28px;
             border: none;
         }
@@ -321,11 +314,76 @@ footer {
             right: 0px;
             margin-top: 8px;
         }
-        .menu-btn:active {
-            height: 0;
+        header .menu {
+            background-color: #5671F6;
+            width: 817px;
+            height: 575px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 105px;
+            left: -27px;
+        }
+        header .menu  a, header #menu-active a {
+            color: white;
+        }
+        header .menu a {
+            color: white;
+            margin-bottom: 18px;
+        }
+        header .menu a:nth-child(4) {
+            margin-bottom: 112px;
+        }
+        .menu > div {
+            border: none;
+        }
+        #menu-active > div {
+            border: none;
+        }
+        .menu .registration a {
+            color: white;
+            border-top: 1px solid rgba(212, 212, 212, 1);
+            padding-top: 66px;
+        }
+        .menu .registration a, #menu-active .registration a {
+            color: white;
+        }
+        .menu div:last-child {
+            display: block;
+            margin-top: 30px;
+            height: auto;
         }
         
-        
+    }
+
+    @media screen  and (max-width: 990px) {
+        .flex {
+            margin: 0;
+        }
+        .log-in {
+            display: none;
+        }
+        .description .hunters {
+            margin-top: 30px;
+        }
+        .description .info {
+            display: grid;
+            grid-template-columns: 248px;
+            margin-bottom: 27px;
+        }
+        .actors {
+            margin: 45px auto 20px;
+        }
+        .actors:last-child {
+            margin-bottom: 55px;
+        }
+        .news-block {
+            width: 260px;
+        }
+        .title2 {
+            padding: 70px 0 65px 0;
+        }
     }
 
 }

@@ -107,6 +107,7 @@ header .menu a, header #menu-active a {
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 21px;
+    width: 439px;
 }
 .description .info {
     display: grid;
@@ -317,7 +318,7 @@ footer {
         header .menu {
             background-color: #5671F6;
             width: 817px;
-            height: 575px;
+            height: 552px;
             position: absolute;
             display: flex;
             flex-direction: column;

@@ -148,8 +148,7 @@ header .menu a, header #menu-active a {
 }
 .play {
     width: 358px;
-    margin-top: 45px;
-    margin-left: 222px;
+    margin: 45px 0 20px;
     border: 1px solid #D4D4D4;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -157,7 +156,7 @@ header .menu a, header #menu-active a {
 .play-rectangle {
     display: flex;
     align-items: center;
-    margin: 25px 81px;
+    margin: 25px 65px;
 }
 .play-rectangle a {
     margin-left: 14px;
@@ -211,6 +210,9 @@ footer {
     background-color: #F3F3F3;
     padding-left: 153px;
 }
+.news-block {
+    align-items: center;
+}
 .title2 {
     padding: 70px 0 65px 153px;
     font-size: 24px;
@@ -236,6 +238,14 @@ footer {
     line-height: 16px;
     font-weight: bold;
 }
+.arrow {
+    width: 25px;
+    height: 21px;
+    border: none;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 /*@media*/
 @media screen and (max-width: 1199px) {
@@ -245,7 +255,7 @@ footer {
     .logo {
         border-right: none;
     }
-    .flex {
+    /* .flex {
         margin: 0;
         margin-left: 28px;
     }
@@ -354,7 +364,7 @@ footer {
         display: block;
         margin-top: 30px;
         height: auto;
-    }
+    } */
 }
 
 @media screen  and (max-width: 991px) {
@@ -371,6 +381,7 @@ footer {
         display: grid;
         grid-template-columns: 248px;
         margin-bottom: 27px;
+        justify-content: center;
     }
     .actors {
         margin: 45px auto 20px;
@@ -378,10 +389,120 @@ footer {
     .actors:last-child {
         margin-bottom: 55px;
     }
-    .news-block {
-        width: 260px;
+    .play-img {
+        margin: 0 auto;
     }
-    .title2 {
-        padding: 70px 0 65px 0;
+    .play {
+        margin: 0;
+    }
+    .description {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .rating {
+        justify-content: center;
+    }
+    .description-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-align {
+        text-align: center;
+    }
+    .description img {
+        margin: 30px auto;
+    }
+    .description .plot {
+        margin: 0 auto 50px;
+    }
+    .actor-wrapper {
+        margin: 45px 0;
+        justify-content: center;
+    }
+    .actor {
+        margin-left: 28px;
+    }
+    .actors {
+        margin-bottom: 20px;
+    }
+    .news h1 {
+        padding: 70px 0 65px 28px;
+    }
+    .menu-btn {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color:#363636;
+        top: 50px;
+        right: 28px;
+        border: none;
+    }
+    .menu-btn::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color:#363636;
+        right: 0px;
+        margin-top: -8px;
+    }
+    .menu-btn::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background-color:#363636;
+        right: 0px;
+        margin-top: 8px;
+    }
+    header .menu {
+        background-color: #5671F6;
+        width: 572px;
+        height: auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        padding: 100px 0;
+    }
+    header .menu  a, header #menu-active a {
+        color: white;
+    }
+    header .menu a {
+        color: white;
+        margin-bottom: 18px;
+    }
+    header .menu a:nth-child(4) {
+        margin-bottom: 112px;
+    }
+    .menu > div {
+        border: none;
+    }
+    #menu-active > div {
+        border: none;
+    }
+    .menu .registration a {
+        color: white;
+        border-top: 1px solid rgba(212, 212, 212, 1);
+        padding-top: 66px;
+    }
+    .menu .registration a, #menu-active .registration a {
+        color: white;
+    }
+    .menu div:last-child {
+        display: block;
+        margin-top: 30px;
+        height: auto;
+    }
+    .play-rectangle {
+        align-items: center;
+        text-align: center;
+        margin: 0 58px;
     }
 }

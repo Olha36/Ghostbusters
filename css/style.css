@@ -140,29 +140,35 @@ header .menu a, header #menu-active a {
     margin-left: 13px;
 }
 .description .hunters {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-size: 36px;
     line-height: 42px;
     font-weight: 900;
     color: #363636;
+    text-shadow: 5px 5px 10px darkslategrey;
 }
 .description h4 {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     font-size: 18px;
     line-height: 21px;
     color: #A5A5A5;
 }
 .description .plot {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     font-size: 14px;
     line-height: 21px;
 }
 .info {
     display: flex;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 .text {
     margin: 0 50px 15px 0;
+    max-width: 90px;
+}
+.rating {
+    justify-content: center;
 }
 .description .text p,
 .text h2 {
@@ -174,18 +180,17 @@ header .menu a, header #menu-active a {
     margin-bottom: 10px;
 }
 .rectangle {
-    width: 100px;
-    height: 100px;
+    width: 90px;
     margin-right: 16px;
     border: 1px solid #5671F6;
     border-radius: 10px;
 }
 .rectangle p {
     text-align: center;
-    margin-top: 34px;
     font-size: 28px;
     line-height: 33px;
     color: #5671F6;
+    padding: 23px;
 }
 .description .rate p {
     margin-bottom: 7px;
@@ -198,9 +203,6 @@ header .menu a, header #menu-active a {
     line-height: 21px;
 }
 
-/* .search img {
-    margin-right: 22px;
-} */
 
 /* section cast */
 .actor {
@@ -324,6 +326,7 @@ header .menu a, header #menu-active a {
   
      #movie-search {
         margin-left: 20px;
+        display: none;
      }
   
      .header {
@@ -350,11 +353,7 @@ header .menu a, header #menu-active a {
         margin-left: 20px;
      }
 }
-@media screen and (max-width: 1199px) {
-    #movie-search {
-        display: none;
-    }
-}
+
 @media screen and (max-width: 991px) {
     .container {
         max-width: 760px;
@@ -387,13 +386,13 @@ header .menu a, header #menu-active a {
     header .menu {
         display: none;
         background-color: #5671F6;
-        width: 529px;
         height: auto;
         position: absolute;
         flex-direction: column;
         justify-content: center;
         top: 105px;
-        right: -30px;
+        right: -38px;
+        left: 0;
         padding: 100px 0;
     }
     header  .menu.active {
@@ -437,6 +436,7 @@ header .menu a, header #menu-active a {
     .mobile {
         display: flex;
         margin-left: auto;
+        padding-right: 15px;
     }
     .play-img {
         margin: 0 auto;
@@ -450,15 +450,13 @@ header .menu a, header #menu-active a {
         text-align: center;
         margin: 0 58px;
     }
+    .text-align {
+        text-align: center;
+    }
     .description .hunters {
         margin-top: 30px;
         font-size: 20px;
     }
-    /* .description .info {
-        display: grid;
-        grid-template-columns: 248px;
-        margin-bottom: 27px;
-    } */
     .description {
         margin: 0;
         display: flex;
@@ -549,4 +547,27 @@ header .menu a, header #menu-active a {
     } */
     
     
+}
+@media screen and (max-width: 575px) {
+    .container {
+        max-width: 320px;
+    }
+    .description img, .play {
+        width: 325px;
+    }
+    .play-rectangle {
+        width: 26px;
+    }
+    .info {
+        justify-content: center;
+    }
+    .plot {
+        padding: 0 5px;
+    }
+    .news-title {
+        font-size: 10px;
+    }
+    .swiper-wrapper {
+        margin-left: 72px;
+    }
 }

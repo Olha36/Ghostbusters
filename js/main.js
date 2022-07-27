@@ -10,3 +10,18 @@ menuButton.addEventListener('click', function () {
     menuActive.classList.toggle('menu-active');
 })
 
+//slider
+let offset = 0; // left offset
+
+let  swiperSlide = document.querySelector('.swiper-slide');
+console.log(swiperSlide);
+
+document.querySelector('.arrow').addEventListener('click', function() {
+    offset = -offset + 232;
+    if (offset > 928) {
+        offset = 0;
+    }
+    swiperSlide.style.left = -offset + 'px';
+})
+
+

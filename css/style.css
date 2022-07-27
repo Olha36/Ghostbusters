@@ -165,9 +165,6 @@ header .menu a, header #menu-active a {
     margin: 0 50px 15px 0;
     max-width: 90px;
 }
-.rating {
-    justify-content: center;
-}
 .description .text p,
 .text h2 {
     font-size: 16px;
